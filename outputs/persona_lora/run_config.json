@@ -1,0 +1,17 @@
+{
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "data_file": "data/persona_lora/ramsay_style_preferences.json",
+  "out_dir": "outputs/persona_lora",
+  "val_count": 20,
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "lr": 5e-05,
+  "beta": 0.1,
+  "micro_batch": 4,
+  "accum": 2,
+  "epochs": 3,
+  "max_length": 512,
+  "max_prompt_length": 256,
+  "seed": 42
+}

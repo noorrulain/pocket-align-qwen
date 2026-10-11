@@ -25,5 +25,4 @@ J="python scripts/judge_pairwise_kaggle.py --judge_model $JUDGE --batch_size 5 -
 $J --mode general --pairs_path outputs/eval/uf_dpo_vs_sft_pairs.jsonl --output_path outputs/eval/uf_dpo_vs_sft_judged.jsonl
 $J --mode safety --pairs_path outputs/eval/hh_dpo_vs_sft_pairs.jsonl --output_path outputs/eval/hh_dpo_vs_sft_judged.jsonl
 $J --mode persona --pairs_path outputs/eval/persona_lora_vs_base_pairs.jsonl --output_path outputs/eval/persona_lora_vs_base_judged.jsonl
-python scripts/plot_runs.py --sft_dir outputs/runs/sft --hh_dir outputs/runs/dpo_hh --uf_dir outputs/runs/dpo_uf --persona_dir outputs/runs/persona_lora
-zip -qr final_artifacts.zip outputs/eval outputs/runs outputs/generations figures
+python -c "import shutil; shutil.make_archive('final_artifacts', 'zip', '.', 'outputs')"

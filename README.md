@@ -25,9 +25,10 @@ bash pocket-align-qwen/kaggle/stage_sft.sh
 bash pocket-align-qwen/kaggle/stage_dpo.sh hh
 bash pocket-align-qwen/kaggle/stage_dpo.sh uf
 bash pocket-align-qwen/kaggle/stage_judge.sh
+PYTHONPATH=. python scripts/plot_runs.py
 ```
 
-The DPO stages read the SFT checkpoint from the attached SFT notebook output. The judge stage runs in a Kaggle benchmark notebook with the earlier notebook outputs attached.
+The DPO stages read the SFT checkpoint from the attached SFT notebook output. The judge stage runs in a Kaggle benchmark notebook with the earlier notebook outputs attached. The report is in `report/report.pdf`.
 
 ## Tests
 

@@ -1,0 +1,7 @@
+{
+  "best_val_reward_acc": 0.7310000061988831,
+  "best_step": 450,
+  "updates": 469,
+  "reference_ckpt": "/kaggle/input/notebooks/danialmaqbool/pocket-align-qwen-stage-1-sft/pocket-align-qwen/outputs/sft/best",
+  "minutes": 96.26492617925008
+}

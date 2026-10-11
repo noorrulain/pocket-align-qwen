@@ -1,0 +1,21 @@
+{
+  "sft_ckpt": "/kaggle/input/notebooks/danialmaqbool/pocket-align-qwen-stage-1-sft/pocket-align-qwen/outputs/sft/best",
+  "train_file": "data/prepared/uf_train.jsonl",
+  "val_file": "data/prepared/uf_val.jsonl",
+  "out_dir": "outputs/dpo_uf",
+  "beta": 0.1,
+  "lr": 1e-06,
+  "optimizer": "rmsprop",
+  "max_length": 512,
+  "micro_batch": 1,
+  "accum": 32,
+  "clip": 1.0,
+  "epochs": 1,
+  "eval_every": 50,
+  "eval_batch": 4,
+  "limit_train": 0,
+  "limit_val": 0,
+  "seed": 42,
+  "policy_device": "cuda:0",
+  "reference_device": "cuda:1"
+}

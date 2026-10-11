@@ -1,0 +1,6 @@
+{
+  "train_pairs": 200,
+  "val_pairs": 20,
+  "trainable_params": 8683520,
+  "steps": 75
+}

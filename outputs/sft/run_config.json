@@ -1,0 +1,20 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "train_file": "data/prepared/sft_train.jsonl",
+  "val_file": "data/prepared/sft_val.jsonl",
+  "out_dir": "outputs/sft",
+  "max_length": 512,
+  "micro_batch": 2,
+  "accum": 16,
+  "lr": 2e-05,
+  "warmup_frac": 0.03,
+  "weight_decay": 0.1,
+  "clip": 1.0,
+  "epochs": 1,
+  "eval_every": 100,
+  "eval_batch": 8,
+  "limit_train": 0,
+  "limit_val": 0,
+  "seed": 42,
+  "device": "cuda:0"
+}
