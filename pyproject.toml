@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pocket-align-qwen"
+version = "0.1.0"
+description = "SFT, from-scratch DPO and LoRA-DPO on small language models."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["pocketalign"]

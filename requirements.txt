@@ -1,0 +1,12 @@
+transformers>=4.56.1,<5
+datasets>=3.0,<5
+huggingface_hub
+accelerate>=1.4
+tqdm
+pyyaml
+sentencepiece
+safetensors
+matplotlib
+peft>=0.15,<0.18
+trl==0.23.1
+pytest>=8
